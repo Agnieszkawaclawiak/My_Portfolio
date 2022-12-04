@@ -117,7 +117,7 @@ float:bottom-right
   
 }
 
-#Github1 {
+.Github1 {
   grid-area: Github1;
   background-image: src("C:\Users\ggosi\first_day_stuff\image1.png");
 
