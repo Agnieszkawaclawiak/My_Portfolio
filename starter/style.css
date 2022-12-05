@@ -139,7 +139,7 @@ text-align:right
 
 #Github3 {
   grid-area: cGithub3;
-  background-image: src("C:\Users\ggosi\first_day_stuff\image3.png");
+  background-image: src="./starter/image3.png";
 }
 
 #Github4 {
