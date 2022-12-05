@@ -53,8 +53,7 @@ body {
 position:relative ;
 bottom: 8px;
 left: 16px;
-text-align:right
-
+text-align:bottom left
 }
 .flex-container > div {
   background-color: rgb(239, 87, 214);
@@ -68,6 +67,8 @@ text-align:right
 .flex-container {
   display: flex;
   background-color: #af33c3;
+  justify-content: center;
+  
 }
 
 /*This is for up tp page contact 
@@ -110,31 +111,28 @@ text-align:right
 
 
 #categoryGrid {
-  margin: 10px 5%;
   display: grid;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 5px;
-  cursor: pointer;
   align-content: end
-  grid-template-rows: 30vh 30vh 30vh;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas:
   "Github1 Github1 Github1 "
-  "Github2 Github2 Github3"
-  "Github4 Github5 Github5"
+  "Github2 Github3 Github4 Github5"
+  
   
 }
 
 .Github1 {
-  grid-area: Github1;
+  grid-area: top row;
   background-image: src("C:\Users\ggosi\first_day_stuff\image1.png");
   flex-grow: 3;
 
 }
 #Github2 {
-  grid-area: Github2;
+  grid-area:leftSiebar;
   background-image: src("C:\Users\ggosi\first_day_stuff\image2.png");
   flex-grow: 1;
 }
@@ -152,7 +150,7 @@ text-align:right
 }
 
 #Github5 {
-  grid-area: Github5;
+  grid-area: Rightsidebar;
   background-image: src("C:\Users\ggosi\first_day_stuff\image5.png");
   flex-grow: 1;
 }
@@ -165,6 +163,7 @@ text-align:right
   cursor: pointer;
   display: grid;
   align-content: end;
+  
 }
 
 .heading {
@@ -194,8 +193,10 @@ text-align:right
     grid-template-areas:
     "Flex-container "
     "Category Grid"
-    "Img.Float-Left"
+    "Float-Left"
     "Page-wrapper"
+    "About_me"
+    "heading"
   }
   #categoryGrid {
     grid-template-rows: 300px 300px 300px 300px 300px;
@@ -206,6 +207,8 @@ text-align:right
       "Github3"
       "Github4"
       "Github5"
+      "CAtegoryGridArea"
+      "img src"
     ;
   }
 }
