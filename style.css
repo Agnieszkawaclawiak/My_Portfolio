@@ -2,6 +2,10 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  align-items: center;
+  
+
+  
 }
 
 body {
@@ -50,7 +54,7 @@ position:relative ;
 bottom: 8px;
 left: 16px;
 text-align:right
-float:bottom-right
+
 }
 .flex-container > div {
   background-color: rgb(239, 87, 214);
@@ -108,11 +112,17 @@ float:bottom-right
 #categoryGrid {
   margin: 10px 5%;
   display: grid;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  align-content: end
   grid-template-rows: 30vh 30vh 30vh;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
   "Github1 Github1 Github1 "
-  "Github2 Github3 Github3"
+  "Github2 Github2 Github3"
   "Github4 Github5 Github5"
   
 }
@@ -155,8 +165,42 @@ float:bottom-right
 .heading {
   background-color: rgba(67, 4, 56, 0.7);
   padding: 15px;
-  height: 25px;
+  height: 15px;
   color: rgb(237, 193, 228);
-  font-size: 18px;
+  font-size: 12px;
   border-bottom: 5px solid #ff1078;
+}
+
+@media only screen and (max-width: 1000px) {
+  #navigation {
+    display: none;
+  }
+  .icons {
+    margin-left: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #headline {
+    position: static;
+    margin: 20px;
+  }
+  #heroGrid {
+    grid-template-areas:
+    "Flex-container "
+    "Category Grid"
+    "Img.Float-Left"
+    "Page-wrapper"
+  }
+  #categoryGrid {
+    grid-template-rows: 300px 300px 300px 300px 300px;
+    grid-template-columns: 80vw;
+    grid-template-areas:
+      "Github1"
+      "Github2"
+      "Github3"
+      "Github4"
+      "Github5"
+    ;
+  }
 }
