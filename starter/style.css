@@ -130,26 +130,31 @@ text-align:right
 .Github1 {
   grid-area: Github1;
   background-image: src("C:\Users\ggosi\first_day_stuff\image1.png");
+  flex-grow: 3;
 
 }
 #Github2 {
   grid-area: Github2;
   background-image: src("C:\Users\ggosi\first_day_stuff\image2.png");
+  flex-grow: 1;
 }
 
 #Github3 {
   grid-area: cGithub3;
   background-image: src="./starter/image3.png";
+  flex-grow: 1;
 }
 
 #Github4 {
   grid-area: Github4;
   background-image: src("C:\Users\ggosi\first_day_stuff\image4.png");
+  flex-grow: 1;
 }
 
 #Github5 {
   grid-area: Github5;
   background-image: src("C:\Users\ggosi\first_day_stuff\image5.png");
+  flex-grow: 1;
 }
 
 .categoryGridArea {
